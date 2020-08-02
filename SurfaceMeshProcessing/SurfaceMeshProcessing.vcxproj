@@ -1,0 +1,221 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{B12702AD-ABFB-343A-A199-8E24837244A3}</ProjectGuid>
+    <Keyword>Qt4VSv1.0</Keyword>
+    <ProjectName>SurfaceMeshProcessing</ProjectName>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>11.0.60315.1</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PreprocessorDefinitions>UNICODE;WIN32;WIN64;_USE_MATH_DEFINES;QT_GUI_LIB;QT_OPENGL_LIB;QT_UITOOLS_LIB;QT_WIDGETS_LIB;QT_WINEXTRAS_LIB;QT_CORE_LIB;QT_DATAVISUALIZATION_LIB;QT_3DCORE_LIB;QT_3DANIMATION_LIB;QT_3DEXTRAS_LIB;QT_3DINPUT_LIB;QT_3DLOGIC_LIB;QT_3DRENDER_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Program Files\OpenMesh 8.1\include;.\GeneratedFiles;.;$(QTDIR)\include;.\GeneratedFiles\$(ConfigurationName);$(QTDIR)\include\QtGui;$(QTDIR)\include\QtANGLE;$(QTDIR)\include\QtOpenGL;$(QTDIR)\include\QtUiTools;$(QTDIR)\include\QtWidgets;$(QTDIR)\include\QtWinExtras;$(QTDIR)\include\QtCore;$(QTDIR)\include\QtDataVisualization;$(QTDIR)\include\Qt3DCore;$(QTDIR)\include\Qt3DAnimation;$(QTDIR)\include\Qt3DExtras;$(QTDIR)\include\Qt3DInput;$(QTDIR)\include\Qt3DLogic;$(QTDIR)\include\Qt3DRender;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <Optimization>Disabled</Optimization>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>false</TreatWChar_tAsBuiltInType>
+      <SDLCheck>true</SDLCheck>
+      <WarningLevel>Level3</WarningLevel>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <OutputFile>$(OutDir)\$(ProjectName).exe</OutputFile>
+      <AdditionalLibraryDirectories>C:\Program Files\OpenMesh 8.1\lib;$(QTDIR)\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>qtmaind.lib;opengl32.lib;glu32.lib;OpenMeshCored.lib;OpenMeshToolsd.lib;Qt5Guid.lib;Qt5OpenGLd.lib;Qt5UiToolsd.lib;Qt5Widgetsd.lib;Qt5WinExtrasd.lib;Qt5Cored.lib;Qt5DataVisualizationd.lib;Qt53DCored.lib;Qt53DAnimationd.lib;Qt53DExtrasd.lib;Qt53DInputd.lib;Qt53DLogicd.lib;Qt53DRenderd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PreprocessorDefinitions>UNICODE;WIN32;WIN64;QT_NO_DEBUG;NDEBUG;_USE_MATH_DEFINES;QT_GUI_LIB;QT_OPENGL_LIB;QT_UITOOLS_LIB;QT_WIDGETS_LIB;QT_WINEXTRAS_LIB;QT_CORE_LIB;QT_DATAVISUALIZATION_LIB;QT_3DCORE_LIB;QT_3DANIMATION_LIB;QT_3DEXTRAS_LIB;QT_3DINPUT_LIB;QT_3DLOGIC_LIB;QT_3DRENDER_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\lib\openmesh\include;.\GeneratedFiles;.;$(QTDIR)\include;.\GeneratedFiles\$(ConfigurationName);$(QTDIR)\include\QtGui;$(QTDIR)\include\QtANGLE;$(QTDIR)\include\QtOpenGL;$(QTDIR)\include\QtUiTools;$(QTDIR)\include\QtWidgets;$(QTDIR)\include\QtWinExtras;$(QTDIR)\include\QtCore;$(QTDIR)\include\QtDataVisualization;$(QTDIR)\include\Qt3DCore;$(QTDIR)\include\Qt3DAnimation;$(QTDIR)\include\Qt3DExtras;$(QTDIR)\include\Qt3DInput;$(QTDIR)\include\Qt3DLogic;$(QTDIR)\include\Qt3DRender;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DebugInformationFormat />
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>false</TreatWChar_tAsBuiltInType>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <OutputFile>$(OutDir)\$(ProjectName).exe</OutputFile>
+      <AdditionalLibraryDirectories>D:\lib\openmesh\lib;$(QTDIR)\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <AdditionalDependencies>qtmain.lib;opengl32.lib;glu32.lib;OpenMeshCore.lib;OpenMeshTools.lib;Qt5Gui.lib;Qt5OpenGL.lib;Qt5UiTools.lib;Qt5Widgets.lib;Qt5WinExtras.lib;Qt5Core.lib;Qt5DataVisualization.lib;Qt53DCore.lib;Qt53DAnimation.lib;Qt53DExtras.lib;Qt53DInput.lib;Qt53DLogic.lib;Qt53DRender.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="GeneratedFiles\Debug\moc_InteractiveViewerWidget.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_MainViewerWidget.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_MeshParamWidget.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_MeshViewerWidget.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_QGLViewerWidget.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_surfacemeshprocessing.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\qrc_surfacemeshprocessing.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_InteractiveViewerWidget.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_MainViewerWidget.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_MeshParamWidget.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_MeshViewerWidget.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_QGLViewerWidget.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_surfacemeshprocessing.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="MeshDefinition.cpp" />
+    <ClCompile Include="MeshParamWidget.cpp" />
+    <ClCompile Include="MeshViewer\InteractiveViewerWidget.cpp" />
+    <ClCompile Include="MeshViewer\MainViewerWidget.cpp" />
+    <ClCompile Include="MeshViewer\MeshViewerWidget.cpp" />
+    <ClCompile Include="MeshViewer\QGLViewerWidget.cpp" />
+    <ClCompile Include="surfacemeshprocessing.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="surfacemeshprocessing.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Moc%27ing surfacemeshprocessing.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DUNICODE -DWIN32 -DWIN64 -D_USE_MATH_DEFINES -DQT_GUI_LIB -DQT_OPENGL_LIB -DQT_UITOOLS_LIB -DQT_WIDGETS_LIB -DQT_WINEXTRAS_LIB -DQT_CORE_LIB -DQT_DATAVISUALIZATION_LIB -DQT_3DCORE_LIB -DQT_3DANIMATION_LIB -DQT_3DEXTRAS_LIB -DQT_3DINPUT_LIB -DQT_3DLOGIC_LIB -DQT_3DRENDER_LIB -D%(PreprocessorDefinitions)  "-IC:\Program Files\OpenMesh 8.1\include" "-I.\GeneratedFiles" "-I." "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtANGLE" "-I$(QTDIR)\include\QtOpenGL" "-I$(QTDIR)\include\QtUiTools" "-I$(QTDIR)\include\QtWidgets" "-I$(QTDIR)\include\QtWinExtras" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtDataVisualization" "-I$(QTDIR)\include\Qt3DCore" "-I$(QTDIR)\include\Qt3DAnimation" "-I$(QTDIR)\include\Qt3DExtras" "-I$(QTDIR)\include\Qt3DInput" "-I$(QTDIR)\include\Qt3DLogic" "-I$(QTDIR)\include\Qt3DRender"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Moc%27ing surfacemeshprocessing.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DUNICODE -DWIN32 -DWIN64 -DQT_NO_DEBUG -DNDEBUG -D_USE_MATH_DEFINES -DQT_GUI_LIB -DQT_OPENGL_LIB -DQT_UITOOLS_LIB -DQT_WIDGETS_LIB -DQT_WINEXTRAS_LIB -DQT_CORE_LIB -DQT_DATAVISUALIZATION_LIB -DQT_3DCORE_LIB -DQT_3DANIMATION_LIB -DQT_3DEXTRAS_LIB -DQT_3DINPUT_LIB -DQT_3DLOGIC_LIB -DQT_3DRENDER_LIB -D%(PreprocessorDefinitions)  "-ID:\lib\openmesh\include" "-I.\GeneratedFiles" "-I." "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtANGLE" "-I$(QTDIR)\include\QtOpenGL" "-I$(QTDIR)\include\QtUiTools" "-I$(QTDIR)\include\QtWidgets" "-I$(QTDIR)\include\QtWinExtras" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtDataVisualization" "-I$(QTDIR)\include\Qt3DCore" "-I$(QTDIR)\include\Qt3DAnimation" "-I$(QTDIR)\include\Qt3DExtras" "-I$(QTDIR)\include\Qt3DInput" "-I$(QTDIR)\include\Qt3DLogic" "-I$(QTDIR)\include\Qt3DRender"</Command>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="MeshDefinition.h" />
+    <CustomBuild Include="MeshParamWidget.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Moc%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DUNICODE -DWIN32 -DWIN64 -D_USE_MATH_DEFINES -DQT_GUI_LIB -DQT_OPENGL_LIB -DQT_UITOOLS_LIB -DQT_WIDGETS_LIB -DQT_WINEXTRAS_LIB -DQT_CORE_LIB -DQT_DATAVISUALIZATION_LIB -DQT_3DCORE_LIB -DQT_3DANIMATION_LIB -DQT_3DEXTRAS_LIB -DQT_3DINPUT_LIB -DQT_3DLOGIC_LIB -DQT_3DRENDER_LIB -D%(PreprocessorDefinitions)  "-IC:\Program Files\OpenMesh 8.1\include" "-I.\GeneratedFiles" "-I." "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtANGLE" "-I$(QTDIR)\include\QtOpenGL" "-I$(QTDIR)\include\QtUiTools" "-I$(QTDIR)\include\QtWidgets" "-I$(QTDIR)\include\QtWinExtras" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtDataVisualization" "-I$(QTDIR)\include\Qt3DCore" "-I$(QTDIR)\include\Qt3DAnimation" "-I$(QTDIR)\include\Qt3DExtras" "-I$(QTDIR)\include\Qt3DInput" "-I$(QTDIR)\include\Qt3DLogic" "-I$(QTDIR)\include\Qt3DRender"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Moc%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DUNICODE -DWIN32 -DWIN64 -DQT_NO_DEBUG -DNDEBUG -D_USE_MATH_DEFINES -DQT_GUI_LIB -DQT_OPENGL_LIB -DQT_UITOOLS_LIB -DQT_WIDGETS_LIB -DQT_WINEXTRAS_LIB -DQT_CORE_LIB -DQT_DATAVISUALIZATION_LIB -DQT_3DCORE_LIB -DQT_3DANIMATION_LIB -DQT_3DEXTRAS_LIB -DQT_3DINPUT_LIB -DQT_3DLOGIC_LIB -DQT_3DRENDER_LIB -D%(PreprocessorDefinitions)  "-ID:\lib\openmesh\include" "-I.\GeneratedFiles" "-I." "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtANGLE" "-I$(QTDIR)\include\QtOpenGL" "-I$(QTDIR)\include\QtUiTools" "-I$(QTDIR)\include\QtWidgets" "-I$(QTDIR)\include\QtWinExtras" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtDataVisualization" "-I$(QTDIR)\include\Qt3DCore" "-I$(QTDIR)\include\Qt3DAnimation" "-I$(QTDIR)\include\Qt3DExtras" "-I$(QTDIR)\include\Qt3DInput" "-I$(QTDIR)\include\Qt3DLogic" "-I$(QTDIR)\include\Qt3DRender"</Command>
+    </CustomBuild>
+    <CustomBuild Include="MeshViewer\QGLViewerWidget.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Moc%27ing QGLViewerWidget.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DUNICODE -DWIN32 -DWIN64 -D_USE_MATH_DEFINES -DQT_GUI_LIB -DQT_OPENGL_LIB -DQT_UITOOLS_LIB -DQT_WIDGETS_LIB -DQT_WINEXTRAS_LIB -DQT_CORE_LIB -DQT_DATAVISUALIZATION_LIB -DQT_3DCORE_LIB -DQT_3DANIMATION_LIB -DQT_3DEXTRAS_LIB -DQT_3DINPUT_LIB -DQT_3DLOGIC_LIB -DQT_3DRENDER_LIB -D%(PreprocessorDefinitions)  "-IC:\Program Files\OpenMesh 8.1\include" "-I.\GeneratedFiles" "-I." "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtANGLE" "-I$(QTDIR)\include\QtOpenGL" "-I$(QTDIR)\include\QtUiTools" "-I$(QTDIR)\include\QtWidgets" "-I$(QTDIR)\include\QtWinExtras" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtDataVisualization" "-I$(QTDIR)\include\Qt3DCore" "-I$(QTDIR)\include\Qt3DAnimation" "-I$(QTDIR)\include\Qt3DExtras" "-I$(QTDIR)\include\Qt3DInput" "-I$(QTDIR)\include\Qt3DLogic" "-I$(QTDIR)\include\Qt3DRender"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Moc%27ing QGLViewerWidget.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DUNICODE -DWIN32 -DWIN64 -DQT_NO_DEBUG -DNDEBUG -D_USE_MATH_DEFINES -DQT_GUI_LIB -DQT_OPENGL_LIB -DQT_UITOOLS_LIB -DQT_WIDGETS_LIB -DQT_WINEXTRAS_LIB -DQT_CORE_LIB -DQT_DATAVISUALIZATION_LIB -DQT_3DCORE_LIB -DQT_3DANIMATION_LIB -DQT_3DEXTRAS_LIB -DQT_3DINPUT_LIB -DQT_3DLOGIC_LIB -DQT_3DRENDER_LIB -D%(PreprocessorDefinitions)  "-ID:\lib\openmesh\include" "-I.\GeneratedFiles" "-I." "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtANGLE" "-I$(QTDIR)\include\QtOpenGL" "-I$(QTDIR)\include\QtUiTools" "-I$(QTDIR)\include\QtWidgets" "-I$(QTDIR)\include\QtWinExtras" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtDataVisualization" "-I$(QTDIR)\include\Qt3DCore" "-I$(QTDIR)\include\Qt3DAnimation" "-I$(QTDIR)\include\Qt3DExtras" "-I$(QTDIR)\include\Qt3DInput" "-I$(QTDIR)\include\Qt3DLogic" "-I$(QTDIR)\include\Qt3DRender"</Command>
+    </CustomBuild>
+    <CustomBuild Include="MeshViewer\MeshViewerWidget.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Moc%27ing MeshViewerWidget.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DUNICODE -DWIN32 -DWIN64 -D_USE_MATH_DEFINES -DQT_GUI_LIB -DQT_OPENGL_LIB -DQT_UITOOLS_LIB -DQT_WIDGETS_LIB -DQT_WINEXTRAS_LIB -DQT_CORE_LIB -DQT_DATAVISUALIZATION_LIB -DQT_3DCORE_LIB -DQT_3DANIMATION_LIB -DQT_3DEXTRAS_LIB -DQT_3DINPUT_LIB -DQT_3DLOGIC_LIB -DQT_3DRENDER_LIB -D%(PreprocessorDefinitions)  "-IC:\Program Files\OpenMesh 8.1\include" "-I.\GeneratedFiles" "-I." "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtANGLE" "-I$(QTDIR)\include\QtOpenGL" "-I$(QTDIR)\include\QtUiTools" "-I$(QTDIR)\include\QtWidgets" "-I$(QTDIR)\include\QtWinExtras" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtDataVisualization" "-I$(QTDIR)\include\Qt3DCore" "-I$(QTDIR)\include\Qt3DAnimation" "-I$(QTDIR)\include\Qt3DExtras" "-I$(QTDIR)\include\Qt3DInput" "-I$(QTDIR)\include\Qt3DLogic" "-I$(QTDIR)\include\Qt3DRender"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Moc%27ing MeshViewerWidget.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DUNICODE -DWIN32 -DWIN64 -DQT_NO_DEBUG -DNDEBUG -D_USE_MATH_DEFINES -DQT_GUI_LIB -DQT_OPENGL_LIB -DQT_UITOOLS_LIB -DQT_WIDGETS_LIB -DQT_WINEXTRAS_LIB -DQT_CORE_LIB -DQT_DATAVISUALIZATION_LIB -DQT_3DCORE_LIB -DQT_3DANIMATION_LIB -DQT_3DEXTRAS_LIB -DQT_3DINPUT_LIB -DQT_3DLOGIC_LIB -DQT_3DRENDER_LIB -D%(PreprocessorDefinitions)  "-ID:\lib\openmesh\include" "-I.\GeneratedFiles" "-I." "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtANGLE" "-I$(QTDIR)\include\QtOpenGL" "-I$(QTDIR)\include\QtUiTools" "-I$(QTDIR)\include\QtWidgets" "-I$(QTDIR)\include\QtWinExtras" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtDataVisualization" "-I$(QTDIR)\include\Qt3DCore" "-I$(QTDIR)\include\Qt3DAnimation" "-I$(QTDIR)\include\Qt3DExtras" "-I$(QTDIR)\include\Qt3DInput" "-I$(QTDIR)\include\Qt3DLogic" "-I$(QTDIR)\include\Qt3DRender"</Command>
+    </CustomBuild>
+    <CustomBuild Include="MeshViewer\InteractiveViewerWidget.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Moc%27ing InteractiveViewerWidget.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DUNICODE -DWIN32 -DWIN64 -D_USE_MATH_DEFINES -DQT_GUI_LIB -DQT_OPENGL_LIB -DQT_UITOOLS_LIB -DQT_WIDGETS_LIB -DQT_WINEXTRAS_LIB -DQT_CORE_LIB -DQT_DATAVISUALIZATION_LIB -DQT_3DCORE_LIB -DQT_3DANIMATION_LIB -DQT_3DEXTRAS_LIB -DQT_3DINPUT_LIB -DQT_3DLOGIC_LIB -DQT_3DRENDER_LIB -D%(PreprocessorDefinitions)  "-IC:\Program Files\OpenMesh 8.1\include" "-I.\GeneratedFiles" "-I." "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtANGLE" "-I$(QTDIR)\include\QtOpenGL" "-I$(QTDIR)\include\QtUiTools" "-I$(QTDIR)\include\QtWidgets" "-I$(QTDIR)\include\QtWinExtras" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtDataVisualization" "-I$(QTDIR)\include\Qt3DCore" "-I$(QTDIR)\include\Qt3DAnimation" "-I$(QTDIR)\include\Qt3DExtras" "-I$(QTDIR)\include\Qt3DInput" "-I$(QTDIR)\include\Qt3DLogic" "-I$(QTDIR)\include\Qt3DRender"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Moc%27ing InteractiveViewerWidget.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DUNICODE -DWIN32 -DWIN64 -DQT_NO_DEBUG -DNDEBUG -D_USE_MATH_DEFINES -DQT_GUI_LIB -DQT_OPENGL_LIB -DQT_UITOOLS_LIB -DQT_WIDGETS_LIB -DQT_WINEXTRAS_LIB -DQT_CORE_LIB -DQT_DATAVISUALIZATION_LIB -DQT_3DCORE_LIB -DQT_3DANIMATION_LIB -DQT_3DEXTRAS_LIB -DQT_3DINPUT_LIB -DQT_3DLOGIC_LIB -DQT_3DRENDER_LIB -D%(PreprocessorDefinitions)  "-ID:\lib\openmesh\include" "-I.\GeneratedFiles" "-I." "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtANGLE" "-I$(QTDIR)\include\QtOpenGL" "-I$(QTDIR)\include\QtUiTools" "-I$(QTDIR)\include\QtWidgets" "-I$(QTDIR)\include\QtWinExtras" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtDataVisualization" "-I$(QTDIR)\include\Qt3DCore" "-I$(QTDIR)\include\Qt3DAnimation" "-I$(QTDIR)\include\Qt3DExtras" "-I$(QTDIR)\include\Qt3DInput" "-I$(QTDIR)\include\Qt3DLogic" "-I$(QTDIR)\include\Qt3DRender"</Command>
+    </CustomBuild>
+    <CustomBuild Include="MeshViewer\MainViewerWidget.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Moc%27ing MainViewerWidget.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DUNICODE -DWIN32 -DWIN64 -D_USE_MATH_DEFINES -DQT_GUI_LIB -DQT_OPENGL_LIB -DQT_UITOOLS_LIB -DQT_WIDGETS_LIB -DQT_WINEXTRAS_LIB -DQT_CORE_LIB -DQT_DATAVISUALIZATION_LIB -DQT_3DCORE_LIB -DQT_3DANIMATION_LIB -DQT_3DEXTRAS_LIB -DQT_3DINPUT_LIB -DQT_3DLOGIC_LIB -DQT_3DRENDER_LIB -D%(PreprocessorDefinitions)  "-IC:\Program Files\OpenMesh 8.1\include" "-I.\GeneratedFiles" "-I." "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtANGLE" "-I$(QTDIR)\include\QtOpenGL" "-I$(QTDIR)\include\QtUiTools" "-I$(QTDIR)\include\QtWidgets" "-I$(QTDIR)\include\QtWinExtras" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtDataVisualization" "-I$(QTDIR)\include\Qt3DCore" "-I$(QTDIR)\include\Qt3DAnimation" "-I$(QTDIR)\include\Qt3DExtras" "-I$(QTDIR)\include\Qt3DInput" "-I$(QTDIR)\include\Qt3DLogic" "-I$(QTDIR)\include\Qt3DRender"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Moc%27ing MainViewerWidget.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DUNICODE -DWIN32 -DWIN64 -DQT_NO_DEBUG -DNDEBUG -D_USE_MATH_DEFINES -DQT_GUI_LIB -DQT_OPENGL_LIB -DQT_UITOOLS_LIB -DQT_WIDGETS_LIB -DQT_WINEXTRAS_LIB -DQT_CORE_LIB -DQT_DATAVISUALIZATION_LIB -DQT_3DCORE_LIB -DQT_3DANIMATION_LIB -DQT_3DEXTRAS_LIB -DQT_3DINPUT_LIB -DQT_3DLOGIC_LIB -DQT_3DRENDER_LIB -D%(PreprocessorDefinitions)  "-ID:\lib\openmesh\include" "-I.\GeneratedFiles" "-I." "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtANGLE" "-I$(QTDIR)\include\QtOpenGL" "-I$(QTDIR)\include\QtUiTools" "-I$(QTDIR)\include\QtWidgets" "-I$(QTDIR)\include\QtWinExtras" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtDataVisualization" "-I$(QTDIR)\include\Qt3DCore" "-I$(QTDIR)\include\Qt3DAnimation" "-I$(QTDIR)\include\Qt3DExtras" "-I$(QTDIR)\include\Qt3DInput" "-I$(QTDIR)\include\Qt3DLogic" "-I$(QTDIR)\include\Qt3DRender"</Command>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="surfacemeshprocessing.qrc">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Rcc%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.\GeneratedFiles\qrc_%(Filename).cpp;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">"$(QTDIR)\bin\rcc.exe" -name "%(Filename)" -no-compress "%(FullPath)" -o .\GeneratedFiles\qrc_%(Filename).cpp</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Rcc%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\GeneratedFiles\qrc_%(Filename).cpp;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">"$(QTDIR)\bin\rcc.exe" -name "%(Filename)" -no-compress "%(FullPath)" -o .\GeneratedFiles\qrc_%(Filename).cpp</Command>
+    </CustomBuild>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties lreleaseOptions="" lupdateOnBuild="0" lupdateOptions="" MocDir=".\GeneratedFiles\$(ConfigurationName)" MocOptions="" Qt5Version_x0020_Win32="5.1.1" Qt5Version_x0020_x64="Qt5.15.0" RccDir=".\GeneratedFiles" UicDir=".\GeneratedFiles" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

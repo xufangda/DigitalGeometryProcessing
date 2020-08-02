@@ -1,0 +1,17 @@
+<RCC>
+    <qresource prefix="SurfaceMeshProcessing">
+      <file>Images/flat.png</file>
+      <file>Images/flatlines.png</file>
+      <file>Images/points.png</file>
+      <file>Images/smooth.png</file>
+      <file>Images/wire.png</file>
+      <file>Images/hiddenlines.png</file>
+      <file>Images/ClearMesh.png</file>
+      <file>Images/saveScreen.png</file>
+      <file>Images/Open.png</file>
+      <file>Images/Save.png</file>
+      <file>Images/boundary.png</file>
+      <file>Images/bbox.png</file>
+      <file>Images/lighton.png</file>
+    </qresource>
+</RCC>
