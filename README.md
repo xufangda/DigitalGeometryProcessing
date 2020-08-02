@@ -1,3 +1,11 @@
+
+# Xiaoming Fu Surface Processing Framework + VS2019
+
+This is the Xiaoming Fu's Framework, but upgraded to VS2019 + OpenMesh 8.1 + Qt 5.15.0
+
+
+
+
 # Mesh Viewer for Triangular Surfaces
 
 The program is used to load meshes and render using OpenGL.
