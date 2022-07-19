@@ -12,11 +12,11 @@ The program is used to load meshes and render using OpenGL.
 
 ## Usage
 
-Open the .sln file using Visual Studio, then change Qt version and include path of OpenMesh, and finally compile.
+Open the `.sln` file using Visual Studio, then change Qt version and include path of OpenMesh, and finally compile.
 
 ### Supported File Formats
 
-.obj .off .ply .stl
+`.obj` `.off` `.ply` `.stl`
 
 ## Environment & Compiler
 
